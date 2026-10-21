@@ -1,0 +1,205 @@
+{
+    "info": {
+        "name": "Project",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get Artikel",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "GET",
+                "body": {},
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/artikel",
+                    "path": [
+                        "artikel"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [
+                        {
+                            "key": "limit",
+                            "value": "2",
+                            "description": "",
+                            "type": "string"
+                        },
+                        {
+                            "key": "offset",
+                            "value": "0",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ],
+                    "variable": []
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "Get Detail Artikel",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "GET",
+                "body": {},
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/artikel/:id",
+                    "path": [
+                        "artikel",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "1",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "Create Artikel",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "POST",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"title\" : \"Ini adalah title artikel\",\r\n    \"content\" : \"Ini adalah content artikel. Disini menjelaskan isi artikel mengenai apapun. Disini juga tempat untuk mendeskripsikan cerita, dan juga apapun itu. Bagian content berisi setidaknya 200 karakter untuk membuat sebuah artikel yang valid.\",\r\n    \"category\": \"Mistery\",\r\n    \"status\": \"publish\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/artikel",
+                    "path": [
+                        "artikel"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "Update Artikel",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "PUT",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"title\" : \"Ini adalah title artikel\",\r\n    \"content\" : \"Ini adalah content artikel. Disini menjelaskan isi artikel mengenai apapun. Disini juga tempat untuk mendeskripsikan cerita, dan juga apapun itu. Bagian content berisi setidaknya 200 karakter untuk membuat sebuah artikel yang valid.\",\r\n    \"category\": \"Mistery\",\r\n    \"status\": \"draft\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/artikel/:id",
+                    "path": [
+                        "artikel",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "1",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "Delete Artikel",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "DELETE",
+                "body": {},
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/projects/:id",
+                    "path": [
+                        "projects",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "1",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        }
+    ],
+    "variable": [],
+    "event": [],
+    "auth": {}
+}
